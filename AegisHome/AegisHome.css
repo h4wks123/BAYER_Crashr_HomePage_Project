@@ -1,4 +1,5 @@
-/* Switched to OOCSS for reusability 
+/* I switched to using hyphens as delimiters because it was 
+difficult for me to provide class names for the elements.
 
 320px — 480px: Mobile devices.
 481px — 768px: iPads, Tablets.
@@ -58,7 +59,7 @@ html, body {
 .aegis-first-background-layout {
     position: relative;
     background-image: linear-gradient(180deg, #79FAF3 0%, #3C92F9 37%, #0F3CAE 100%);
-    min-height: 100vh;
+    min-width: 100vw;
     height: auto;
 }
 
@@ -66,10 +67,6 @@ html, body {
     position: relative;
     background-color: #000F33;
     mix-blend-mode: hard-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     min-width: 100vw;
     height: auto;
 }
@@ -82,7 +79,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     min-width: 100vw;
     height: auto;
     background-repeat: no-repeat;
@@ -97,21 +93,11 @@ html, body {
     }
     }
 
-/* Third Background Layout */
-.aegis-third-background-layout {
-    position: relative;
-    background-color: #000F33;
-    overflow: auto;
-    min-height: 100vh;
-    min-width: 100vw;
-    height: auto;
-}
-
 /* Background container */
 .background-container {
     position: relative;
-    max-width: 60rem;
-    width: 90%; 
+    max-width: 50rem;
+    width: 75%; 
     height: 100%;
     display: flex; 
     flex-direction: column;
@@ -195,7 +181,7 @@ html, body {
     }
     
     .aegis-nav-button-container span{
-        font-size: 0.7rem;;
+        font-size: 0.7rem;
         color: white;
         text-align: center;
     }
@@ -290,102 +276,97 @@ html, body {
 
 
 
-/* First Background Home Components (Needs Fixing) */
-.aegis-home-containers {
+/* First Background Home Components */
+.aegis-home-containers{
     position: relative;
-    padding: 5rem 0rem 2rem 0rem;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 6rem 0rem;
 }
 
-.parent-home-containers{
+.parent-small-containers {
     position: relative;
-    width: 100%;
+    width: 70%;
     height: auto;
-}
-
-.small-containers {
-    border: 0.05rem solid #fff;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 0.5rem;
-}
-
-.large-containers {
-    border: 0.05rem transparent;
-    border-radius: 0.5rem;
-    background-image: linear-gradient(180deg, #3C92F9 0%, #0F3CAE 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .small-containers, .large-containers{
-    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0rem 0rem 1rem 0rem;
 } 
 
-.small-containers div{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    height: 7.5rem;
+.small-containers{
+    height: 8rem;
+    border: 0.05rem solid #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    justify-content: space-between;
 }
 
-.large-containers div{
-    display: flex;
-    justify-content: center;
-    align-items: end;
+.large-containers{
     height: 12rem;
+    width: 70%;
+    border: 0.05rem transparent;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(180deg, #3C92F9 0%, #0F3CAE 100%);
+    justify-content: space-around;
 }
 
+.small-containers span, .large-containers span{
+    padding: 0.75rem 0rem 0rem 0rem;
+    height: 10%;
+}
 
-.small-containers img, .large-containers img {
-    position: relative;
-    padding: 0.5rem 0rem 0rem 0rem;
-    width: 10rem;
-    max-height: 85%;
-    max-width: 75%;
+.small-containers img, .large-containers img{        
+    max-height: 75%;
+    width: 90%;
     object-fit: contain;
 }
 
-.small-containers span, .large-containers span {
-    font-size: 0.7rem;
-    color: white;
-    text-align: center;
-    padding: 1rem 0rem 0rem 0rem;
-}
 
-@media(min-width: 768px) {
-
-    .aegis-home-containers {
-        height: 20rem;
-        max-height: 100%;
-        display: flex;
+@media(min-width: 768px){
+    .aegis-home-containers{
+        height: 18rem;
         flex-direction: row;
         justify-content: space-between;
-        align-items: stretch;
+        align-content: center;
     }
-
-    .parent-home-containers{
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-        min-height: 100%;
-        width: calc(33.33% - 0.5rem);
+    
+    .parent-small-containers {
+        width: 30%;
+        height: 100%;
+    }
+    
+    .small-containers, .large-containers{
         margin: 0;
+    } 
+    
+    .small-containers{
+        height: 45%;
     }
-
+    
     .large-containers{
-        min-height: 100%;
-        width: calc(33.33% - 0.5rem);
-        margin: 0;
+        height: 100%;
+        width: 30%;
+    }
+    
+    .small-containers img, .large-containers img{        
+        width: 75%;
     }
 
+    .large-containers img{
+        min-height: 80%;
+    }
 }
-
 
 /* Second Background Layout */
 .aegis-second-background-layout {
@@ -393,7 +374,6 @@ html, body {
     background-color: white;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
     height: auto;
 }
 
@@ -411,8 +391,10 @@ html, body {
     }
     
     .aegis-second-home-text{
+        height: auto;
         width: 35%;
         max-width: 35%;
+        padding: 0rem 0rem 0rem 0rem;
     }
 
     .aegis-second-card-container-layout{
@@ -655,4 +637,170 @@ html, body {
 
 .aegis-second-FAQ-3 p {
     font-size: 0.6rem;
+}
+
+/* Third Background Layout */
+.aegis-footer-layout {
+    position: relative;
+    background-color: #000F33;
+    min-width: 100vw;
+    height: auto;
+}
+
+.aegis-footer-blend{
+    position: relative;
+    top: 0;
+    background-image: url("../Assets/Images/Backgrounds/FooterBlur.png");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.aegis-footer-text {
+    position: relative;
+    margin: 3rem 0rem 0.5rem 0rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 0.05rem solid rgba(117, 124, 140, 0.5);
+}
+
+.aegis-footer-first-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.aegis-footer-second-and-third-text {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aegis-footer-second-text {
+    position: relative;
+    width: auto;
+}
+
+.aegis-footer-second-text h6, .aegis-footer-third-text h6 {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.aegis-footer-second-text div, .aegis-footer-third-text div {
+    display: flex;
+    width: auto;
+    gap: 0.25rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.aegis-footer-second-text span, .aegis-footer-third-text span {
+    font-size: 0.7rem;
+    color: white;
+}
+
+.aegis-footer-second-text img, .aegis-footer-third-text img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.aegis-footer-third-text {
+    position: relative;
+    width: auto;
+}
+
+.aegis-footer-fourth-button {
+    height: 2.5rem;
+    width: auto;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.aegis-footer-fourth-button button {
+    height: 100%;
+    width: auto;
+    background-image: linear-gradient(180deg, #79FAF3 0%, #3C92F9 63%, #0F3CAE 100%);
+    border: 0.05rem solid;
+    border-radius: 50em;
+    border-color: white;
+    box-shadow: 0rem 0.2rem 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.aegis-footer-fourth-button span {
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0rem 0.5rem;
+}
+
+.aegis-footer-extra-details {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+.aegis-footer-extra-details span{
+    color: rgba(117, 124, 140, 0.5);
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.aegis-footer-extra-details div{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .aegis-footer-text{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 1.5rem 0rem 1.5rem 0rem;
+    }
+    
+    .aegis-footer-first-logo{
+        width: 30%;
+        display: flex;
+        justify-content: start;
+        padding-bottom: 1rem;
+    }
+
+    .aegis-footer-second-and-third-text{
+        width: 40%;
+        padding-bottom: 1rem;
+    }
+    
+    .aegis-footer-fourth-button{
+        width: 20%;
+        display: flex;
+        justify-content: end;
+        padding-bottom: 1rem;
+    }
+    
+    .aegis-footer-extra-details div{
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
