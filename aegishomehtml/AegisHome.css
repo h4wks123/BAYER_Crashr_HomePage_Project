@@ -74,7 +74,7 @@ html, body {
 .aegis-first-background-layout-image {
     position: relative;
     top: 0;
-    background-image: url("../../Assets/Backgrounds/Aegis.png");
+    background-image: url("../Assets/Backgrounds/Aegis.png");
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -650,7 +650,7 @@ html, body {
 .aegis-footer-blend{
     position: relative;
     top: 0;
-    background-image: url("../../Assets/Backgrounds/FooterBlur.png");
+    background-image: url("../Assets/Backgrounds/FooterBlur.png");
     object-fit: cover;
     display: flex;
     justify-content: center;
