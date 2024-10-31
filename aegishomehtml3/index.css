@@ -1,0 +1,1124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Montserrat;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.aegis-home-layout {
+  width: 100vw;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.aegis-brightness-mode {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 17.8rem;
+  max-width: 1280px;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.aegis-brightness-mode img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aegis-first-background-layout {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aegis-first-background-layout-blend {
+  position: absolute;
+  mix-blend-mode: hard-light;
+  background-image: url("../Assets/Backgrounds/firstbackground.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.aegis-first-background-layout-image {
+  position: absolute;
+  top: 0;
+  background-image: url("../Assets/Backgrounds/AegisBackground2.png");
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  opacity: 20%;
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  background-size: 72% 72%;
+  mix-blend-mode: screen;
+}
+
+.aegis-first-background-layout-union {
+  position: absolute;
+  mix-blend-mode: hard-light;
+  background-image: url("../Assets/Backgrounds/AegisUnion2.png");
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  opacity: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: screen;
+}
+
+@media (min-width: 2000px) {
+  .aegis-first-background-layout {
+    height: auto;
+  }
+  .aegis-first-background-layout-image {
+    height: 90%;
+    margin-top: 2rem;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aegis-header {
+  width: 85%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.aegis-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aegis-nav-menu {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.aegis-nav-menu div {
+  position: relative;
+}
+
+.aegis-nav-menu h6 {
+  position: relative;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.aegis-nav-menu h6::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.05rem;
+  background-image: linear-gradient(
+    90deg,
+    #79faf3 0%,
+    #3c92f9 63%,
+    #0f3cae 100%
+  );
+  left: -1.5rem;
+  bottom: -1.25rem;
+  padding: 0 1.5rem;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.aegis-nav-menu h6:hover::after {
+  transform: scaleX(1);
+}
+
+.aegis-nav-button-container button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.aegis-nav-button-container span {
+  display: inline-block;
+  padding: 0.5rem 1rem 0.45rem 1rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.aegis-nav-button-container button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50em;
+  border: 0.05rem solid transparent;
+  background: linear-gradient(135deg, #79faf3 0%, #3c92f9 37%, #0f3cae 100%)
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+/* Aegis Home Text */
+.aegis-home-text {
+  margin: 13rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.aegis-home-text h1 {
+  color: white;
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.aegis-home-text p {
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.02rem;
+}
+
+.aegis-home-text button {
+  position: relative;
+  margin-top: 3rem;
+  padding: 0.7rem 1.1rem;
+  background-image: linear-gradient(
+    135deg,
+    #79faf3 0%,
+    #3c92f9 37%,
+    #0f3cae 100%
+  );
+  border: none;
+  border-radius: 50em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.aegis-home-text button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 99%;
+  height: 95%;
+  background-color: white;
+  border-radius: inherit;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.aegis-home-text button span {
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  color: #000f33;
+}
+
+.aegis-home-text span {
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+}
+
+/* Second Background */
+
+.aegis-second-background-layout {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.aegis-second-background-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 0 0 5rem 0;
+  gap: 1rem;
+}
+
+.aegis-second-background-first-parent,
+.aegis-second-background-second-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  height: auto;
+}
+
+.aegis-second-background-first-parent li,
+.aegis-second-background-second-parent li {
+  width: 32%;
+  height: auto;
+  list-style: none;
+}
+
+.aegis-second-background-first-parent li:nth-child(1) {
+  height: 18.1rem;
+}
+
+.aegis-second-background-first-parent li:nth-child(1) h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #323e59;
+}
+
+.aegis-second-background-first-parent li:nth-child(1) p {
+  line-height: 1.5rem;
+  word-wrap: break-word;
+  font-size: 0.95rem;
+  margin-top: 1.25rem;
+  color: #4d5465;
+  text-align: left;
+}
+
+.aegis-second-background-first-parent li:nth-child(1) div {
+  text-align: left;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.aegis-second-background-first-parent li:nth-child(1) div img {
+  vertical-align: middle;
+  height: 1.7rem;
+  max-width: auto;
+  object-fit: contain;
+}
+
+.aegis-second-background-first-parent li:nth-child(1) div span {
+  vertical-align: middle;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.25rem;
+  line-height: 1.5rem;
+  color: #323e59;
+}
+
+.aegis-second-background-first-parent li:nth-child(n + 2),
+.aegis-second-background-second-parent li {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  height: 14rem;
+  padding: 1.5rem 0 0 1.5rem;
+}
+
+.aegis-second-background-first-parent li:nth-child(n + 2) img,
+.aegis-second-background-second-parent li img {
+  max-height: 100%;
+  height: 2.25rem;
+  max-width: auto;
+  object-fit: contain;
+}
+
+.aegis-second-background-first-parent li:nth-child(n + 2) h6,
+.aegis-second-background-second-parent li h6 {
+  color: #323e59;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.aegis-second-background-first-parent li:nth-child(n + 2) p,
+.aegis-second-background-second-parent li p {
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  margin-right: 0.15rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  color: #4d5465;
+  text-align: left;
+}
+
+/* Aegis Third Background */
+.aegis-third-background {
+  background-image: url("../Assets/Backgrounds/thirdbackground.svg");
+  width: 100%;
+  height: 140vh;
+  position: relative;
+}
+
+.aegis-third-background-container {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+}
+.aegis-third-background-items {
+  margin-top: 13rem;
+  height: auto;
+  width: 85%;
+  text-align: left;
+}
+
+.aegis-third-background-items article {
+  display: inline-block;
+  vertical-align: top;
+  width: 15rem;
+  white-space: normal;
+}
+
+.aegis-third-background-items article h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.aegis-third-background-items article p {
+  line-height: 1.5rem;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: white;
+  text-align: left;
+}
+
+.aegis-third-background-items article div {
+  text-align: left;
+  height: auto;
+  width: auto;
+  margin-top: 2rem;
+}
+
+.aegis-third-background-items article div span {
+  vertical-align: middle;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-right: 0.15rem;
+  color: white;
+}
+
+.aegis-third-background-items article div img {
+  vertical-align: middle;
+  height: 1.7rem;
+  max-width: auto;
+  object-fit: contain;
+}
+
+.aegis-third-background-items li:nth-child(2) {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  vertical-align: middle;
+  white-space: normal;
+  width: 20rem;
+  margin-left: 2%;
+  height: 28rem;
+  border-radius: 3%;
+}
+
+.aegis-third-background-items li:nth-child(2) img {
+  max-height: 100%;
+  height: 6.5rem;
+  max-width: auto;
+  object-fit: contain;
+  margin: 2rem 1.5rem 0 2rem;
+}
+
+.aegis-third-background-items li:nth-child(2) h6 {
+  color: #323e59;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 1.5rem 0 2rem;
+}
+
+.aegis-third-background-items li:nth-child(2) p {
+  line-height: 1.5rem;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  color: #323e59;
+  text-align: left;
+  margin: 1rem 1.5rem 0 2rem;
+}
+
+.aegis-scroll-images {
+  position: absolute;
+  width: 100%;
+  margin-top: 10rem;
+  display: block;
+  text-align: center;
+}
+
+.aegis-scroll-images li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.aegis-scroll-images span:nth-child(1) {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.aegis-scroll-images span:nth-child(n + 2) {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: #495b83;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+.aegis-third-background-items li:nth-child(n + 3) {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: white;
+  opacity: 0.4;
+  width: 16rem;
+  height: 21rem;
+  margin-left: 2%;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 3%;
+}
+
+.aegis-third-background-items li:nth-child(n + 3) img {
+  max-height: 100%;
+  height: 4.5rem;
+  max-width: auto;
+  object-fit: contain;
+}
+
+.aegis-third-background-items li:nth-child(n + 3) h6 {
+  color: #323e59;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.1rem;
+}
+
+.aegis-third-background-items li:nth-child(n + 3) p {
+  line-height: 1rem;
+  word-wrap: break-word;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  color: #323e59;
+  text-align: left;
+}
+
+.aegis-third-background-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.aegis-third-background-text h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #323e59;
+}
+
+.aegis-third-background-text p {
+  font-size: 1rem;
+  margin-top: 2rem;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+  color: #4d5465;
+  text-align: center;
+}
+
+@media (min-width: 2000px) {
+  .aegis-third-background {
+    height: auto;
+  }
+  .aegis-third-background-items {
+    margin: 0 0 10rem 0;
+    padding: 10rem 0;
+  }
+}
+
+.aegis-fourth-background {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.aegis-fourth-background-timestamp {
+  margin-top: 5rem;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.aegis-fourth-background-timeline-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+.aegis-fourth-background-timeline-information li span {
+  display: inline-block;
+  width: 60%;
+  text-align: end;
+}
+
+.aegis-fourth-background-timeline-information li:nth-child(6) {
+  display: flex;
+  align-items: center;
+}
+
+.aegis-fourth-background-timeline-information li:nth-child(6) span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.aegis-fourth-background-timeline-information li:nth-child(-n + 5) div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: #d9d9d9;
+  border-radius: 1rem;
+  margin-left: 0.75rem;
+}
+
+.aegis-fourth-background-timeline-information li:nth-child(6) div {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: #0033ad;
+  border-radius: 1rem;
+  margin-left: 0.8rem;
+}
+
+.aegis-fourth-background-timeline-information li:nth-child(-n + 5) div::after {
+  content: "";
+  position: absolute;
+  background-color: #d9d9d9;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  height: 4rem;
+  width: 0.01rem;
+  z-index: -1;
+}
+
+.aegis-fourth-background-time-container {
+  position: relative;
+  width: 70%;
+  height: auto;
+  background-color: #0f3cae;
+  text-align: left;
+  border-radius: 3%;
+}
+
+.aegis-fourth-background-time-container div {
+  position: absolute;
+  background-image: url("../Assets/Backgrounds/aegis-fourth-background-time-container.svg");
+  height: 90%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  bottom: 0;
+}
+
+.aegis-fourth-background-time-container img {
+  height: 2rem;
+  object-fit: contain;
+  margin-top: 5rem;
+  padding-left: 2.5rem;
+}
+
+.aegis-fourth-background-time-container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 1.5rem;
+  padding-left: 2.5rem;
+}
+
+.aegis-fourth-background-time-container span {
+  color: white;
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  padding-left: 2.5rem;
+}
+
+.aegis-fourth-background-time-container p {
+  line-height: 1.5rem;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 1.5rem;
+  padding-left: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.aegis-fourth-background-tokenomics {
+  margin-top: 10rem;
+  height: auto;
+  background-color: #f9f9f9;
+  border-radius: 3%;
+  width: 85%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aegis-fourth-background-tokenomics h3:nth-child(1) {
+  margin: 3rem 0 2rem 0;
+}
+
+.aegis-fourth-background-tokenomics h3 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #323e59;
+}
+
+.aegis-fourth-background-tokenomics-details {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+.aegis-fourth-background-tokenomics-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
+.aegis-fourth-background-tokenomics-wheel {
+  background-image: url("../Assets/Backgrounds/aegis-fourth-background-tokenomics.svg");
+  object-fit: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aegis-fourth-background-tokenomics-wheel h3 {
+  margin: 1rem 0;
+}
+
+.aegis-fourth-background-tokenomics-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aegis-fourth-background-tokenomics-text li {
+  list-style-type: none;
+  height: auto;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #2f55b7;
+  border-bottom: 0.05rem solid #2f55b7;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aegis-fourth-background-tokenomics-text li:nth-child(5) {
+  border: none;
+}
+
+.aegis-fourth-background-tokenomics-text li div:nth-child(1),
+.aegis-fourth-background-tokenomics-text li div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aegis-fourth-background-tokenomics-text li div:nth-child(1) div {
+  justify-content: left;
+  width: 70%;
+}
+
+.aegis-fourth-background-tokenomics-text li div:nth-child(1) h6,
+.aegis-fourth-background-tokenomics-text li div:nth-child(1) p {
+  text-align: left;
+  display: flex;
+}
+
+.aegis-fourth-background-tokenomics-text li div:nth-child(1) h6 {
+  width: 20%;
+}
+
+.aegis-fourth-background-tokenomics-text
+  li
+  div:nth-child(1)
+  div
+  h6:nth-child(2) {
+  color: #323e59;
+}
+
+.aegis-fourth-background-tokenomics-text li div:nth-child(1) p {
+  width: 26%;
+}
+
+.aegis-fourth-background-tokenomics-text li div:nth-child(2) span {
+  width: 30%;
+}
+
+.aegis-fourth-background-tokenomics-text li div:nth-child(2) p {
+  text-align: left;
+  width: 70%;
+}
+
+.aegis-fourth-background-tokenomics-text li div:nth-child(1) h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #323e59;
+}
+
+.aegis-fourth-background-tokenomics-text li:nth-child(1) div:nth-child(1) h6 {
+  color: #0f3cae;
+}
+.aegis-fourth-background-tokenomics-text li:nth-child(2) div:nth-child(1) h6 {
+  color: #517ff3;
+}
+.aegis-fourth-background-tokenomics-text li:nth-child(3) div:nth-child(1) h6 {
+  color: #a5d0e8;
+}
+.aegis-fourth-background-tokenomics-text li:nth-child(4) div:nth-child(1) h6 {
+  color: #e9dc94;
+}
+.aegis-fourth-background-tokenomics-text li:nth-child(5) div:nth-child(1) h6 {
+  color: #9747ff;
+}
+
+.aegis-fourth-background-tokenomics-text span,
+.aegis-fourth-background-tokenomics-text p {
+  font-size: 0.8rem;
+  color: #323e59;
+}
+
+.aegis-fifth-background-time-container {
+  background-image: url("../Assets/Backgrounds/aegis-fifth-background.svg");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -15rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.aegis-fifth-background-teams {
+  padding-top: 20rem;
+  margin: 0 auto;
+  width: 82.5%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aegis-fifth-background-teams h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.aegis-fifth-background-teams ul:nth-child(2),
+.aegis-fifth-background-teams ul:nth-child(3) {
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.aegis-fifth-background-teams ul:nth-child(n + 2) li {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.aegis-fifth-background-teams ul:nth-child(n + 2) li:nth-child(n + 1) div {
+  height: 6rem;
+  width: 6rem;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.aegis-fifth-background-teams ul:nth-child(n + 2) li:nth-child(n + 1) h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+.aegis-fifth-background-teams ul:nth-child(n + 2) li:nth-child(n + 1) span {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #bbcaee;
+}
+
+.aegis-fifth-background-FAQs {
+  width: 85%;
+  height: auto;
+  margin: 5rem auto;
+  background-color: #f9f9f9;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aegis-fifth-background-FAQs h3 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #323e59;
+}
+
+.aegis-fifth-background-FAQs div {
+  width: 85%;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.aegis-fifth-background-FAQs div:nth-child(n + 2) div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.aegis-fifth-background-FAQs div:nth-child(n + 2) h5 {
+  color: #323e59;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.aegis-fifth-background-FAQs div:nth-child(n + 2) p {
+  margin-top: 1rem;
+  line-height: 1.1rem;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  color: #4d5465;
+  text-align: left;
+  width: 96%;
+}
+
+.aegis-fifth-background-FAQs div:nth-child(n + 2) button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.aegis-fifth-background-FAQs div:nth-child(4) {
+  padding-bottom: 5rem;
+}
+
+.aegis-fifth-background-FAQs div:nth-child(4) p {
+  border-bottom: none;
+}
+
+.accordion {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.accordion img {
+  transition: transform 0.3s ease;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.21);
+}
+
+.aegis-footer-layout {
+  width: 100%;
+  background-color: #000f33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aegis-footer-upper-details {
+  width: 85%;
+  height: auto;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.aegis-footer-upper-details li {
+  list-style-type: none;
+  color: white;
+}
+
+.aegis-footer-upper-details-first-to-third {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aegis-footer-upper-details-first {
+  width: 40%;
+  text-align: left;
+}
+
+.aegis-footer-upper-details-first img {
+  margin-bottom: 1.6rem;
+  height: 2rem;
+}
+
+.aegis-footer-upper-details-first-images img {
+  margin-right: 0.5rem;
+  height: 2rem;
+}
+
+.aegis-footer-upper-details-second,
+.aegis-footer-upper-details-third {
+  width: 25%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.aegis-footer-upper-details-second h6,
+.aegis-footer-upper-details-third h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.aegis-footer-upper-details-second span,
+.aegis-footer-upper-details-third span {
+  font-size: 0.8rem;
+}
+
+.aegis-footer-upper-details-fourth {
+  position: relative;
+  padding: 0.6rem 1rem;
+  background-image: linear-gradient(
+    135deg,
+    #79faf3 0%,
+    #3c92f9 37%,
+    #0f3cae 100%
+  );
+  border: none;
+  border-radius: 50em;
+  overflow: hidden;
+  height: 50%;
+  cursor: pointer;
+}
+
+.aegis-footer-upper-details-fourth::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 99%;
+  height: 95%;
+  background-color: #000f33;
+  border-radius: inherit;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.aegis-footer-upper-details-fourth span {
+  position: relative;
+  color: white;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.aegis-footer-lower-details {
+  width: 100%;
+  height: auto;
+  border-top: rgba(255, 255, 255, 0.31) solid 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.aegis-footer-lower-details-container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aegis-footer-lower-details-container div {
+  margin: 2rem 0;
+}
+
+.aegis-footer-lower-details-container span {
+  color: #757c8c;
+  font-size: 0.6rem;
+  letter-spacing: 0.05rem;
+}
+
+.aegis-footer-lower-details-container div:nth-child(2) span:nth-child(1) {
+  margin-right: 1rem;
+}

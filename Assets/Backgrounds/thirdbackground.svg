@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" preserveAspectRatio="none">
+    <defs>
+        <clipPath id="myClip">
+            <path d="                
+        M 0,15
+        Q 60,0 70,1
+        Q 185,13 300,30
+        L 300,150 
+        L 235,121 
+        Q 230,120 225,119 
+        L 160,111 
+        Q 150,110 140,111 
+        L 70,119 
+        Q 65,120 60,121 
+        L 0,150 
+        Z" 
+         />
+        </clipPath>
+    </defs>
+    <rect width="300" height="150" fill="#000f33" clip-path="url(#myClip)" />
+</svg>

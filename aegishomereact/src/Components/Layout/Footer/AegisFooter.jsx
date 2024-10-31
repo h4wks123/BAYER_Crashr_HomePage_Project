@@ -61,7 +61,7 @@ function AegisFooter() {
               />
             </li>
           </ul>
-          <button className="rounded-full px-4 py-2 bg-gradient-to-br from-[#79FAF3] from-0% via-[#3C92F9] via-37% to-[#0F3CAE] to-100% shadow-[0_4px_8px_0_rgba(255,255,255,0.15)] md:ml-auto">
+          <button className="rounded-full px-4 py-2 bg-gradient-to-br from-[#79FAF3] from-0% via-[#3C92F9] via-37% to-[#0F3CAE] to-100% shadow-[0_4px_8px_0_rgba(255,255,255,0.15)] mt-8 md:mt-0 md:ml-auto">
             <span className="text-white text-sm font-normal tracking-[0.05rem] mr-1">
               OPEN APP
             </span>

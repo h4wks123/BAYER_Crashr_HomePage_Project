@@ -15,9 +15,9 @@ import UnlockLiquidity from "../../../Assets/Icons/UnlockLiquidity.png";
 function FirstBackground() {
   return (
     <section className="relative bg-gradient-to-br from-[#79FAF3] from-0% via-[#3C92F9] via-37% to-[#0F3CAE] to-100% mix-blend-normal w-full h-auto flex justify-center">
-      <li className="absolute bg-[#000F33] mix-blend-hard-light w-full h-full" />
+      <li className="absolute bg-[#000F33] mix-blend-hard-light w-full h-full list-none" />
       <li
-        className="absolute top-0 min-w-full h-full bg-no-repeat bg-top bg-cover bg-fixed mix-blend-screen xl:bg-scroll xl:bg-contain xl:min-w-[70%]"
+        className="absolute top-0 min-w-full h-full bg-no-repeat bg-top bg-cover bg-fixed mix-blend-screen xl:bg-scroll xl:bg-contain xl:min-w-[70%] list-none"
         style={{ backgroundImage: `url(${AegisBg})` }}
       />
 

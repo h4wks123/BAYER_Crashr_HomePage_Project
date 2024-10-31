@@ -1,0 +1,47 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = aegishomeblazor
+build_property.RootNamespace = aegishomeblazor
+build_property.ProjectDir = /home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor/Components/Common/Footer/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21tb24vRm9vdGVyL0Zvb3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor/Components/Common/Header/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21tb24vSGVhZGVyL0hlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor/Components/Pages/FirstBackground.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9GaXJzdEJhY2tncm91bmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hawks/projects/SAIB_projects/aegis_frontend_project/aegishomeblazor/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,117 @@
+{
+  "Files": [
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Backgrounds/Aegis.png",
+      "PackagePath": "staticwebassets/images/Backgrounds/Aegis.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Backgrounds/FooterBlur.png",
+      "PackagePath": "staticwebassets/images/Backgrounds/FooterBlur.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Backgrounds/Union.png",
+      "PackagePath": "staticwebassets/images/Backgrounds/Union.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/ArrowUpRight.png",
+      "PackagePath": "staticwebassets/images/Icons/ArrowUpRight.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/AutomatedStaking.png",
+      "PackagePath": "staticwebassets/images/Icons/AutomatedStaking.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/CardanoNetworkHealth.png",
+      "PackagePath": "staticwebassets/images/Icons/CardanoNetworkHealth.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/Discord.png",
+      "PackagePath": "staticwebassets/images/Icons/Discord.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/FAQMinus.png",
+      "PackagePath": "staticwebassets/images/Icons/FAQMinus.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/FAQPlus.png",
+      "PackagePath": "staticwebassets/images/Icons/FAQPlus.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/Facebook.png",
+      "PackagePath": "staticwebassets/images/Icons/Facebook.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/LearnMore.png",
+      "PackagePath": "staticwebassets/images/Icons/LearnMore.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/Menu.svg",
+      "PackagePath": "staticwebassets/images/Icons/Menu.svg"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/SaferStaking.png",
+      "PackagePath": "staticwebassets/images/Icons/SaferStaking.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/ShieldedADA.png",
+      "PackagePath": "staticwebassets/images/Icons/ShieldedADA.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/StakeAndReceiveSADA.png",
+      "PackagePath": "staticwebassets/images/Icons/StakeAndReceiveSADA.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/UnlockLiquidity.png",
+      "PackagePath": "staticwebassets/images/Icons/UnlockLiquidity.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Icons/X.png",
+      "PackagePath": "staticwebassets/images/Icons/X.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/images/Logo/Aegis.png",
+      "PackagePath": "staticwebassets/images/Logo/Aegis.png"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/tailwind/tailwind.css",
+      "PackagePath": "staticwebassets/tailwind/tailwind.css"
+    },
+    {
+      "Id": "/home/hawks/projects/SAIB_projects/crashr_frontend_project/aegishomeblazor/wwwroot/tailwind/tailwindconfigs.css",
+      "PackagePath": "staticwebassets/tailwind/tailwindconfigs.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.aegishomeblazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.aegishomeblazor.props",
+      "PackagePath": "build\\aegishomeblazor.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.aegishomeblazor.props",
+      "PackagePath": "buildMultiTargeting\\aegishomeblazor.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.aegishomeblazor.props",
+      "PackagePath": "buildTransitive\\aegishomeblazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

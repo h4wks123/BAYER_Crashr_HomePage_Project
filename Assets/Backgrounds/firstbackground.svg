@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" preserveAspectRatio="none">
+    <defs>
+        <clipPath id="myClip">
+            <path d="M 0,0 
+                      L 0,100 
+                      L 130,145 
+                      Q 150,150 170,145 
+                      L 300,100 
+                      L 300,0 
+                      Z" />
+        </clipPath>
+    </defs>
+    <rect width="300" height="150" fill="#001e66" clip-path="url(#myClip)" />
+</svg>
