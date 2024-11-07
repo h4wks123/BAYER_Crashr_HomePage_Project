@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("aegishomeblazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9e424dc08b4287e261dc001097fcef0b11a3c33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5beacfc24edbfff1b4e30bb46a3f817ce2fb173")]
 [assembly: System.Reflection.AssemblyProductAttribute("aegishomeblazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("aegishomeblazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

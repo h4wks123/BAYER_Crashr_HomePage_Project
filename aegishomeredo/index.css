@@ -607,6 +607,14 @@ body {
   text-align: center;
 }
 
+@media (min-width: 2000px) {
+  .aegis-third-background-text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .aegis-third-background-text h3 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -746,13 +754,15 @@ body {
 }
 
 .aegis-fourth-background-tokenomics {
+  float: left;
   width: 100%;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 3rem auto 0 auto;
   height: auto;
   overflow: hidden;
   background-color: #f9f9f9;
   border-radius: 1rem;
-  padding: 3rem;
+  padding: 3rem 2.5%;
 }
 
 .aegis-fourth-background-tokenomics-title {
@@ -798,7 +808,7 @@ body {
   height: 24rem;
   width: 35%;
   top: 1.5rem;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .aegis-fourth-background-tokenomics-text li {
@@ -867,4 +877,300 @@ body {
   font-size: 0.8rem;
   color: #323e59;
   width: 5rem;
+}
+
+.aegis-fifth-background-layout-top-curve {
+  margin-top: -17.5rem;
+  width: 100vw;
+  height: 45vh;
+  background-image: url("../Assets/Backgrounds/AegisFifthBackgroundTopCurve.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+@media (min-width: 2000px) {
+  .aegis-fifth-background-layout-top-curve {
+    height: 15vh;
+  }
+}
+
+.aegis-fifth-background-layout {
+  background-color: #0033ad;
+  width: 100vw;
+  height: 50vh;
+}
+
+.aegis-fifth-background-team-container {
+  width: 100%;
+  background-color: #0033ad;
+  padding-bottom: 3rem;
+}
+
+.aegis-fifth-background-teams {
+  margin: 0 auto 3rem auto;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 min(7.5vw, 96px);
+  list-style: none;
+  overflow: auto;
+}
+
+.aegis-fifth-background-teams h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.aegis-fifth-background-teams li {
+  float: left;
+  width: 20.5%;
+  margin-top: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.aegis-fifth-background-teams li:nth-child(n + 3):nth-child(-n + 5),
+.aegis-fifth-background-teams li:nth-child(n + 7):nth-child(-n + 9) {
+  margin-left: 6%;
+}
+
+.aegis-fifth-background-teams li div {
+  height: 6rem;
+  width: 6rem;
+  background-color: white;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.aegis-fifth-background-teams li h4 {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin-top: 0.75rem;
+}
+
+.aegis-fifth-background-teams li span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #bbcaee;
+  margin-top: 0.75rem;
+}
+
+.aegis-fifth-background-teams li img {
+  margin-top: 0.75rem;
+}
+
+.aegis-fifth-background-FAQs {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 min(7.5vw, 96px);
+}
+
+.aegis-fifth-background-FAQs-background {
+  background-color: #f9f9f9;
+  border-radius: 1rem;aegis-footer-layout
+  padding: 0 min(7.5vw, 96px);
+}
+
+.aegis-fifth-background-FAQs h3 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #323e59;
+  text-align: center;
+}
+
+.aegis-fifth-background-FAQs div {
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.aegis-fifth-background-FAQs div:nth-child(1) {
+  width: auto;
+}
+
+.aegis-fifth-background-FAQs div:nth-child(n + 2) div::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.aegis-fifth-background-FAQs div h5 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #323e59;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.aegis-fifth-background-FAQs div button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.aegis-fifth-background-FAQs div p {
+  line-height: 1.1rem;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  color: #4d5465;
+  text-align: left;
+  width: 96%;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.21);
+}
+
+.aegis-fifth-background-FAQs div:nth-child(4) {
+  padding-bottom: 4rem;
+}
+
+.aegis-fifth-background-FAQs div:nth-child(4) p {
+  border-bottom: none;
+}
+
+.accordion {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.accordion img {
+  transition: transform 0.3s ease;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.aegis-footer-layout {
+  width: 100%;
+  background-color: #000f33;
+  color: white;
+  list-style: none;
+}
+
+.aegis-footer-upper-details {
+  margin: 0 auto;
+  width: 100%;
+  overflow: auto;
+  max-width: 1280px;
+  padding: 3rem min(7.5vw, 96px) 0 min(7.5vw, 96px);
+  text-align: center;
+  height: auto;
+}
+
+.aegis-footer-upper-details-first {
+  float: left;
+  width: 30%;
+  text-align: left;
+}
+
+.aegis-footer-upper-details-first img {
+  margin-bottom: 1.6rem;
+  height: 2rem;
+}
+
+.aegis-footer-upper-details-first-images img {
+  margin-right: 0.5rem;
+  height: 2rem;
+}
+
+.aegis-footer-upper-details-second,
+.aegis-footer-upper-details-third {
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+
+.aegis-footer-upper-details-second h6,
+.aegis-footer-upper-details-second div,
+.aegis-footer-upper-details-third h6,
+.aegis-footer-upper-details-third div {
+  margin-bottom: 0.8rem;
+}
+
+.aegis-footer-upper-details-second h6,
+.aegis-footer-upper-details-third h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.aegis-footer-upper-details-second span,
+.aegis-footer-upper-details-third span {
+  font-size: 0.8rem;
+}
+
+.aegis-footer-upper-details-fourth {
+  float: right;
+  position: relative;
+  padding: 0.6rem 1rem;
+  background-image: linear-gradient(
+    135deg,
+    #79faf3 0%,
+    #3c92f9 37%,
+    #0f3cae 100%
+  );
+  border: none;
+  border-radius: 50em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.aegis-footer-upper-details-fourth::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 98%;
+  height: 94%;
+  background-color: #000f33;
+  border-radius: inherit;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.aegis-footer-upper-details-fourth span {
+  position: relative;
+  color: white;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.aegis-footer-borders {
+  border-top: solid rgba(255, 255, 255, 0.31) 1px;
+}
+
+.aegis-footer-lower-details {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  overflow: auto;
+  padding: 2rem min(7.5vw, 96px);
+}
+
+.aegis-footer-lower-details span {
+  color: rgba(255, 255, 255, 0.31);
+  font-size: 0.6rem;
+  letter-spacing: 0.05rem;
+}
+
+.aegis-footer-lower-details div:nth-child(1) {
+  float: left;
+}
+
+.aegis-footer-lower-details div:nth-child(2) {
+  float: right;
+}
+
+.aegis-footer-lower-details div:nth-child(2) span:nth-child(2) {
+  margin-left: 2rem;
 }
